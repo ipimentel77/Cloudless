@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+	<title> FormSeeker </title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="formseeker.js"></script>
+	<script>
+		$(document).ready(function(){
+			formseeker();
+		});
+	</script>
+</head>
+<body>
+	<div>
+		<form method="post" action="enviar.php">
+			<div>
+				<label>
+					<span>Nombre:</span>
+					<input type="textfield" name="nombre"></input>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Email:</span>
+					<input type="textfield" name="email"></input>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Asunto:</span>
+					<input type="textfield" name="asunto"></input>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Mensaje:</span>
+					<textarea name="mensaje"></textarea>
+				</label>
+			</div>
+			<div>
+				<input type="submit" value="enviar"></input>
+			</div>
+		</form>
+	</div>
+</body>
