@@ -8,16 +8,19 @@ function formseeker(){
 			return false;
 		});
 	}
+	function procesarLista(){
+	
+	}
 	
 	function procesarFormulario(form){
 		var lista = new Array();
 		$($(form).find('*')).each(function(index,element){
 			var aux = $(element).attr('name');
 			if(aux != undefined){
-				alert('|'+aux+'|');
 				lista.push(aux);
 			}
 		});
+		procesarLista();
 		alert(lista);
 	}
 	
